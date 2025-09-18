@@ -1,19 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: the-test-app
-  description: Testing
+  name: my-test-weather-app
   annotations:
-    github.com/project-slug: ZensarIDP/the-test-app
-    github.com/workflows: ci.yml
-    backstage.io/environments: 'dev,staging,prod'
-  tags:
-    - nodejs
-    - microservice
-    - cloud-run
-    - multi-environment
+    github.com/project-slug: ZensarIDP/my-test-weather-app
 spec:
-  type: service
-  lifecycle: experimental
-  owner: group:default/developers
-  system: the-test-app-system
+  type: other
+  lifecycle: unknown
+  owner: developers
